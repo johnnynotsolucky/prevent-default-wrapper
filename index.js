@@ -1,9 +1,17 @@
 function preventDefault(obj) {
   function handleEvent(e) {
-    if(e && e.preventDefault) {
+    if(isPreventDefaultAvailable(e) && isPreventDefaultAFunction(e)) {
       e.preventDefault();
       return true;
     }
+  }
+
+  function isPreventDefaultAvailable(e) {
+    return e && !!e.preventDefault;
+  }
+
+  function isPreventDefaultAFunction(e) {
+    return typeof e.preventDefault === 'function';
   }
 
   var result = false;
@@ -15,7 +23,7 @@ function preventDefault(obj) {
     	for(var i = 0; i < arguments.length; i++) {
       	handleEvent(arguments[i]);
       }
-      
+
       return obj.apply(this, arguments);
     };
   }

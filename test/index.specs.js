@@ -30,4 +30,12 @@ describe('preventDefault Wrapper', function() {
     assert.equal(preventDefault(), false);
     assert.equal(preventDefault({}), false);
   });
+
+  it('returns false if preventDefault is present but not a function', function() {
+    var e = {
+      preventDefault: {}
+    };
+
+    assert.equal(preventDefault(e), false);
+  });
 });
