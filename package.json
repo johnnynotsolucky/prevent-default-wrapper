@@ -1,5 +1,5 @@
 {
-  "name": "prevent-default-wrapper",
+  "name": "@rq/prevent-default-wrapper",
   "version": "0.0.4",
   "description": "",
   "main": "index.js",
