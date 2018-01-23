@@ -1,4 +1,8 @@
 function preventDefault(obj) {
+  if (obj === null || obj === undefined) {
+    return obj;
+  }
+
   function handleEvent(e) {
     if(isPreventDefaultAvailable(e) && isPreventDefaultAFunction(e)) {
       e.preventDefault();

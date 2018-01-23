@@ -1,6 +1,6 @@
 {
-  "name": "prevent-default-wrapper",
-  "version": "0.0.3",
+  "name": "@rq/prevent-default-wrapper",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnnynotsolucky/prevent-default-wrapper.git"
+    "url": "git+https://github.com/p/prevent-default-wrapper.git"
   },
   "author": "johnnynotsolucky",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/johnnynotsolucky/prevent-default-wrapper/issues"
+    "url": "https://github.com/p/prevent-default-wrapper/issues"
   },
-  "homepage": "https://github.com/johnnynotsolucky/prevent-default-wrapper#readme",
+  "homepage": "https://github.com/p/prevent-default-wrapper#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.5.3",
-    "sinon": "^1.17.4"
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0",
+    "sinon": "^4.2.0"
   }
 }
