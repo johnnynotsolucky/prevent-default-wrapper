@@ -8,7 +8,7 @@ describe('preventDefault Wrapper', function() {
   };
 
   afterEach(function() {
-    mockEvent.preventDefault.reset();
+    mockEvent.preventDefault.resetHistory();
   });
 
   it('calls preventDefault if an event object is passed through', function() {
